@@ -29,23 +29,7 @@ Aquí se cargan los archivos que contienen las funciones del programa.
 #include "Cargar_archivo.c"
 #include "solucionador_lab.c"
 
-/*Se crea una funcion que llama a las otras funciones y cuando 
-el laberinto esta resuelto imprime el resultado*/
-void imprimir_matriz()
-{
-	
-	
-	
-	
-	for(int fila = 0; fila <= num_filas-1; fila++)
-	{	printf("\t\t\t\t\t");
-		for(int columna = 0; columna <= columnas-1; columna++)
-		{
-			printf(" %d ", matriz[fila][columna]);
-		}
-		printf("\n");
-	}
-}
+
 
 int main()
 {
@@ -53,10 +37,8 @@ int main()
 	printf("\n\n\t\t\t\tEl laberinto a resolver es:\n\n\n");
 	imprimir_matriz();
 	
-	soluicionador();
+	solucionador();
 	
-	printf("\n\n\t\t\t\tLaberinto resuelto, la sulucion es:\n\n\n");
-	imprimir_matriz();
 	
     return 0;
 }
